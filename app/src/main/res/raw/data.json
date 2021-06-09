@@ -1,0 +1,28 @@
+{
+  "StudentTeacherData": [
+    {
+      "Image":"https://image.shutterstock.com/image-photo/aerial-people-crowd-on-pedestrian-600w-1486465109.jpg",
+      "RollNumber": "1",
+      "Name": "Student 1",
+      "Class Name": "Maths",
+      "Class Section": "1556691224",
+      "Role": "student"
+    },
+    {
+      "Image":"https://image.shutterstock.com/image-photo/aerial-people-crowd-on-pedestrian-600w-1486465109.jpg",
+      "RollNumber": "2",
+      "Name": "Student 2",
+      "Class Name": "Physics",
+      "Class Section": "1556691224",
+      "Role": "student"
+    },
+    {
+      "Image":"https://image.shutterstock.com/image-photo/aerial-people-crowd-on-pedestrian-600w-1486465109.jpg",
+      "RollNumber": "3",
+      "Name": "Student 3",
+      "Class Name": "Chemistry",
+      "Class Section": "1556691224",
+      "Role": "student"
+    }
+  ]
+}

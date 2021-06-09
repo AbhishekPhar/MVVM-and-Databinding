@@ -1,0 +1,28 @@
+{
+  "StudentTeacherData": [
+    {
+      "Name": "Teacher 1",
+      "Teacher Id": "101",
+      "Subject": "Physics",
+      "Role": "teacher"
+    },
+    {
+      "Name": "Teacher 2",
+      "Teacher Id": "102",
+      "Subject": "Maths",
+      "Role": "teacher"
+    },
+    {
+      "Name": "Teacher 3",
+      "Teacher Id": "103",
+      "Subject": "Chemistry",
+      "Role": "teacher"
+    },
+    {
+      "Name": "Teacher 4",
+      "Teacher Id": "104",
+      "Subject": "Biology",
+      "Role": "teacher"
+    }
+  ]
+}
