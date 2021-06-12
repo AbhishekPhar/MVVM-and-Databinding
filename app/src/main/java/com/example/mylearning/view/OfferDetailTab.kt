@@ -9,15 +9,15 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import com.example.mylearning.R
-import com.example.mylearning.view.adapter.StudentTeacherTabAdapter
+import com.example.mylearning.view.adapter.OfferDetailTabAdapter
 import com.example.mylearning.databinding.FragmentStudentTeacherTabBinding
 
 /**
  * A simple [Fragment] subclass.
- * Use the [StudentTeacherTab.newInstance] factory method to
+ * Use the [OfferDetailTab.newInstance] factory method to
  * create an instance of this fragment.
  */
-class StudentTeacherTab : Fragment() {
+class OfferDetailTab : Fragment() {
     private var views: View? = null
     private var binding: FragmentStudentTeacherTabBinding? = null
 
@@ -35,7 +35,7 @@ class StudentTeacherTab : Fragment() {
     override fun onResume() {
         super.onResume()
         Log.d("AbhiPhar","----OnResume()")
-        val fragmentAdapter = childFragmentManager?.let { StudentTeacherTabAdapter(it) }
+        val fragmentAdapter = childFragmentManager?.let { OfferDetailTabAdapter(it) }
       //  if(ApplicationUtil.isAppOnForeground())
     //    {
             binding!!.viewpagerMain.adapter = fragmentAdapter

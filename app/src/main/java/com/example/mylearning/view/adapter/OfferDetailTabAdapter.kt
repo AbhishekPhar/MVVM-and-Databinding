@@ -6,10 +6,10 @@ import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.mylearning.view.StudentTeacherListFragment
+import com.example.mylearning.view.MainFragment
 
 @SuppressLint("WrongConstant")
-class StudentTeacherTabAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm, FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
+class OfferDetailTabAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm, FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
     private lateinit var fragment: Fragment
 
@@ -18,18 +18,18 @@ class StudentTeacherTabAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm, 
         return when (position) {
             0 -> {
                 Log.d("filterData", "todo"+position);
-                fragment = StudentTeacherListFragment()
+                fragment = MainFragment()
                 val b = Bundle()
-                b.putString("filterData", "Student")
+                b.putString("filterData", "Offers")
                 fragment.arguments = b
                 return fragment
             }
             else-> {
                 Log.d("filterData", "submit"+position);
 
-                fragment = StudentTeacherListFragment()
+                fragment = MainFragment()
                 val b = Bundle()
-                b.putString("filterData", "Teacher")
+                b.putString("filterData", "Details")
                 fragment.arguments = b
                 return fragment
             }
@@ -48,8 +48,8 @@ class StudentTeacherTabAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm, 
 
     override fun getPageTitle(position: Int): CharSequence {
         return when (position) {
-            0 -> "Student"
-            else -> "Teacher"
+            0 -> "Offers"
+            else -> "Details"
         }
     }
 }

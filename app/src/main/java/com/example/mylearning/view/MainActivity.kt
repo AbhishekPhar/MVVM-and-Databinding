@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        ApplicationUtil.openClass(StudentTeacherTab::class.java, supportFragmentManager , null )
+        ApplicationUtil.openClass(OfferDetailTab::class.java, supportFragmentManager , null )
 
     }
 }

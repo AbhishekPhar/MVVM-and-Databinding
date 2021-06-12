@@ -1,0 +1,75 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="android.view.View" />
+
+                <variable
+                    name="datamodel"
+                    type="com.example.mylearning.model.Cupon" />
+
+    </data>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parentId"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/studentlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_weight="10"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:layout_weight="6"
+                        android:id="@+id/text1"
+                        android:text="@{datamodel.title}"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="4"
+                        android:text="Redeem"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:textSize="13sp"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="3"
+                    android:id="@+id/text2"
+                    android:text="@{datamodel.description}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="13sp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/text3"
+                    android:text="@{`Estimated Saving = ` +datamodel.price}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
